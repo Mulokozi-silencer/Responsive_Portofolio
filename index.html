@@ -3,13 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mulokozi Geofrey | Frontend Developer</title>
-    <meta name="description" content="Portfolio of Mulokozi Geofrey, a frontend developer and web designer building responsive, user-friendly websites.">
-    <meta property="og:title" content="Mulokozi Geofrey | Frontend Developer">
-    <meta property="og:description" content="Responsive, user-friendly websites and interfaces.">
-    <meta property="og:image" content="images/mulokozi1-800.jpg">
+    <title>Mulokozi Geofrey | Full-Stack Web Developer &amp; IT Professional</title>
+    <meta name="description" content="Mulokozi Geofrey, Computer Science graduate (MUST) in Dar es Salaam. Full-stack web development with PHP and MySQL, IT support, system maintenance and networking.">
+    <link rel="canonical" href="https://mulokozi-silencer.github.io/Mulokozi_Portofolio/">
+
+    <!-- Link previews (WhatsApp, LinkedIn, Facebook, X) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mulokozi Geofrey">
+    <meta property="og:url" content="https://mulokozi-silencer.github.io/Mulokozi_Portofolio/">
+    <meta property="og:title" content="Mulokozi Geofrey | Full-Stack Web Developer &amp; IT Professional">
+    <meta property="og:description" content="Web applications, IT support and networking. Based in Dar es Salaam, Tanzania.">
+    <meta property="og:image" content="https://mulokozi-silencer.github.io/Mulokozi_Portofolio/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Mulokozi Geofrey, Full-Stack Web Developer and IT Professional">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mulokozi Geofrey | Full-Stack Web Developer &amp; IT Professional">
+    <meta name="twitter:description" content="Web applications, IT support and networking. Based in Dar es Salaam, Tanzania.">
+    <meta name="twitter:image" content="https://mulokozi-silencer.github.io/Mulokozi_Portofolio/images/og-image.jpg">
     <meta name="theme-color" content="#0b1120">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="images/favicon-192.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Structured data: tells Google this page is about a person (name, job, links, education) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mulokozi Geofrey",
+        "alternateName": "Mulokozi D. Geofrey",
+        "jobTitle": "Full-Stack Web Developer & IT Professional",
+        "description": "Computer Science graduate from Mbeya University of Science and Technology, building PHP/MySQL web applications and providing IT support, system maintenance and networking.",
+        "url": "https://mulokozi-silencer.github.io/Mulokozi_Portofolio/",
+        "image": "https://mulokozi-silencer.github.io/Mulokozi_Portofolio/images/mulokozi1-800.jpg",
+        "email": "mailto:mulokoziwillium@gmail.com",
+        "telephone": "+255655478996",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dar es Salaam",
+            "addressCountry": "TZ"
+        },
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Mbeya University of Science and Technology",
+            "alternateName": "MUST"
+        },
+        "knowsAbout": [
+            "Web Development", "PHP", "MySQL", "SQL", "HTML", "CSS", "JavaScript", "React", "Python",
+            "System Administration", "IT Support", "Networking", "pfSense", "Cisco Packet Tracer"
+        ],
+        "sameAs": [
+            "https://www.linkedin.com/in/mulokozi-geofrey-b0ab24266/",
+            "https://github.com/Mulokozi-silencer"
+        ]
+    }
+    </script>
 
     <!-- Apply saved/system theme before the page paints (avoids a flash of the wrong theme) -->
     <script>
@@ -38,7 +87,8 @@
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#resume">Resume</a>
+            <a href="#portfolio">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
 
@@ -50,17 +100,20 @@
                 <i class="bx bx-menu"></i>
             </button>
         </div>
+
+        <div class="scroll-progress" aria-hidden="true"></div>
     </header>
 
     <main>
         <!-- ===== HOME ===== -->
         <section class="home" id="home">
             <div class="home-content">
+                <p class="available"><span class="dot" aria-hidden="true"></span> Available for work</p>
                 <h3>Hello, it's me</h3>
                 <h1>Mulokozi Geofrey</h1>
                 <h3>And I'm a <span class="typing-text"></span></h3>
-                <p>I'm a web designer and frontend developer with over 3 years of experience.
-                    I design and build responsive, user-friendly websites.</p>
+                <p>Computer Science graduate from Mbeya University of Science and Technology. I build web
+                    applications with PHP and MySQL, and keep computers, networks and systems running reliably.</p>
 
                 <div class="social">
                     <a href="https://www.linkedin.com/in/mulokozi-geofrey-b0ab24266/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
@@ -94,38 +147,37 @@
             </div>
             <div class="about-text reveal">
                 <h2 class="section-title">About <span>Me</span></h2>
-                <h4>Frontend Developer &amp; Web Designer</h4>
-                <p>I am a web designer with over 3 years of experience in the industry. My passion lies in creating
-                    captivating website designs and bringing them to life through frontend development. I stay
-                    up to date with current design trends and use my creativity to produce visually appealing,
-                    user-friendly websites.</p>
-                <p>Throughout my career I have developed a deep understanding of user experience (UX) and user
-                    interface (UI) principles. By putting myself in the shoes of end users, I create intuitive and
-                    seamless browsing experiences. When starting a new project, I thoroughly research the target
-                    audience and the client's requirements, so the result matches their expectations and their
-                    brand identity.</p>
+                <h4>Emerging IT Professional</h4>
+                <p>I'm a detail-oriented Computer Science graduate (BSc, MUST, 2025) based in Dar es Salaam, with
+                    hands-on knowledge of information systems, databases, basic networking and application support.
+                    I enjoy building software that makes everyday work easier, and making sure the systems behind it
+                    stay reliable.</p>
+                <p>Through my internship at the National Institute of Transport and field training at NHIF and MUST,
+                    I have maintained hardware, configured operating systems and networks, and built PHP/MySQL web
+                    applications. I'm quick to learn, work well under pressure, and value accuracy, confidentiality
+                    and clear documentation, which suit banks, regulatory bodies and technology-driven institutions.</p>
                 <a href="#contact" class="btn">Let's Talk</a>
             </div>
         </section>
 
         <!-- ===== SERVICES ===== -->
         <section class="services" id="services">
-            <h2 class="section-title">My <span>Services</span></h2>
+            <h2 class="section-title">What I <span>Do</span></h2>
             <div class="services-list">
                 <article class="card reveal">
-                    <i class="bx bx-palette"></i>
-                    <h3>UI/UX Design</h3>
-                    <p>Wireframes, prototypes and polished interfaces designed around your users, so your site is easy to understand and enjoyable to use.</p>
-                </article>
-                <article class="card reveal">
                     <i class="bx bx-code-alt"></i>
-                    <h3>Frontend Development</h3>
-                    <p>Clean, accessible HTML, CSS and JavaScript (and React) that turns designs into fast, working websites.</p>
+                    <h3>Web Development</h3>
+                    <p>Full-stack web applications with PHP and MySQL: dashboards, role-based access and complete data management (CRUD), with responsive HTML, CSS and JavaScript interfaces.</p>
                 </article>
                 <article class="card reveal">
-                    <i class="bx bx-mobile-alt"></i>
-                    <h3>Responsive Websites</h3>
-                    <p>Layouts that look and work great on every screen size, from small phones to large desktop monitors.</p>
+                    <i class="bx bx-wrench"></i>
+                    <h3>IT Support &amp; Maintenance</h3>
+                    <p>Hardware maintenance, operating system and software installation, troubleshooting and preventive maintenance that keeps staff productive and downtime low.</p>
+                </article>
+                <article class="card reveal">
+                    <i class="bx bx-network-chart"></i>
+                    <h3>Networking &amp; Security</h3>
+                    <p>Basic network configuration, connectivity troubleshooting and firewall setup with pfSense, designed and tested in Cisco Packet Tracer.</p>
                 </article>
             </div>
         </section>
@@ -135,137 +187,168 @@
             <h2 class="section-title">My <span>Skills</span></h2>
 
             <div class="skills-grid">
-                <div class="skills-box reveal">
-                    <h3 class="skills-heading">Technical Skills</h3>
-                    <div class="bars">
-                        <div class="bar" style="--w: 90%">
-                            <div class="info"><i class="bx bxl-html5"></i><span>HTML</span><span class="pct">90%</span></div>
-                            <div class="progress-line"><span></span></div>
-                        </div>
-                        <div class="bar" style="--w: 85%">
-                            <div class="info"><i class="bx bxl-css3"></i><span>CSS</span><span class="pct">85%</span></div>
-                            <div class="progress-line"><span></span></div>
-                        </div>
-                        <div class="bar" style="--w: 75%">
-                            <div class="info"><i class="bx bxl-javascript"></i><span>JavaScript</span><span class="pct">75%</span></div>
-                            <div class="progress-line"><span></span></div>
-                        </div>
-                        <div class="bar" style="--w: 65%">
-                            <div class="info"><i class="bx bxl-python"></i><span>Python</span><span class="pct">65%</span></div>
-                            <div class="progress-line"><span></span></div>
-                        </div>
-                        <div class="bar" style="--w: 70%">
-                            <div class="info"><i class="bx bxl-react"></i><span>React</span><span class="pct">70%</span></div>
-                            <div class="progress-line"><span></span></div>
-                        </div>
-                    </div>
+                <div class="skill-group reveal">
+                    <h3><i class="bx bx-code-block"></i> Web Development</h3>
+                    <ul class="badges">
+                        <li><i class="bx bxl-html5"></i> HTML</li>
+                        <li><i class="bx bxl-css3"></i> CSS</li>
+                        <li><i class="bx bxl-javascript"></i> JavaScript</li>
+                        <li><i class="bx bxl-php"></i> PHP</li>
+                        <li><i class="bx bxl-react"></i> React</li>
+                        <li><i class="bx bxl-python"></i> Python</li>
+                    </ul>
                 </div>
-
-                <div class="skills-box reveal">
-                    <h3 class="skills-heading">Professional Skills</h3>
-                    <div class="radial-grid">
-                        <div class="radial" style="--p: 90">
-                            <svg viewBox="0 0 200 200" aria-hidden="true">
-                                <circle class="track" cx="100" cy="100" r="80"></circle>
-                                <circle class="fill" cx="100" cy="100" r="80"></circle>
-                            </svg>
-                            <div class="percentage">90%</div>
-                            <div class="label">Creativity</div>
-                        </div>
-                        <div class="radial" style="--p: 75">
-                            <svg viewBox="0 0 200 200" aria-hidden="true">
-                                <circle class="track" cx="100" cy="100" r="80"></circle>
-                                <circle class="fill" cx="100" cy="100" r="80"></circle>
-                            </svg>
-                            <div class="percentage">75%</div>
-                            <div class="label">Communication</div>
-                        </div>
-                        <div class="radial" style="--p: 85">
-                            <svg viewBox="0 0 200 200" aria-hidden="true">
-                                <circle class="track" cx="100" cy="100" r="80"></circle>
-                                <circle class="fill" cx="100" cy="100" r="80"></circle>
-                            </svg>
-                            <div class="percentage">85%</div>
-                            <div class="label">Time Management</div>
-                        </div>
-                        <div class="radial" style="--p: 83">
-                            <svg viewBox="0 0 200 200" aria-hidden="true">
-                                <circle class="track" cx="100" cy="100" r="80"></circle>
-                                <circle class="fill" cx="100" cy="100" r="80"></circle>
-                            </svg>
-                            <div class="percentage">83%</div>
-                            <div class="label">Problem Solving</div>
-                        </div>
-                        <div class="radial" style="--p: 80">
-                            <svg viewBox="0 0 200 200" aria-hidden="true">
-                                <circle class="track" cx="100" cy="100" r="80"></circle>
-                                <circle class="fill" cx="100" cy="100" r="80"></circle>
-                            </svg>
-                            <div class="percentage">80%</div>
-                            <div class="label">Teamwork</div>
-                        </div>
-                    </div>
+                <div class="skill-group reveal">
+                    <h3><i class="bx bx-data"></i> Databases</h3>
+                    <ul class="badges">
+                        <li><i class="bx bx-data"></i> MySQL</li>
+                        <li><i class="bx bx-table"></i> SQL</li>
+                        <li><i class="bx bx-layer"></i> Database design</li>
+                    </ul>
+                </div>
+                <div class="skill-group reveal">
+                    <h3><i class="bx bx-network-chart"></i> Networking</h3>
+                    <ul class="badges">
+                        <li><i class="bx bx-shield-quarter"></i> pfSense firewall</li>
+                        <li><i class="bx bx-sitemap"></i> Cisco Packet Tracer</li>
+                        <li><i class="bx bx-wifi"></i> Network configuration</li>
+                        <li><i class="bx bx-plug"></i> Connectivity troubleshooting</li>
+                    </ul>
+                </div>
+                <div class="skill-group reveal">
+                    <h3><i class="bx bx-desktop"></i> System Administration</h3>
+                    <ul class="badges">
+                        <li><i class="bx bx-chip"></i> Hardware maintenance</li>
+                        <li><i class="bx bx-windows"></i> OS installation &amp; setup</li>
+                        <li><i class="bx bx-wrench"></i> PC troubleshooting</li>
+                        <li><i class="bx bx-cog"></i> Preventive maintenance</li>
+                    </ul>
+                </div>
+                <div class="skill-group reveal">
+                    <h3><i class="bx bx-wrench"></i> Tools</h3>
+                    <ul class="badges">
+                        <li><i class="bx bxl-git"></i> Git</li>
+                        <li><i class="bx bxl-github"></i> GitHub</li>
+                        <li><i class="bx bx-chip"></i> Arduino</li>
+                        <li><i class="bx bx-cube"></i> Tinkercad</li>
+                    </ul>
+                </div>
+                <div class="skill-group reveal">
+                    <h3><i class="bx bx-group"></i> Soft Skills</h3>
+                    <ul class="badges">
+                        <li>Teamwork</li>
+                        <li>Leadership</li>
+                        <li>Communication</li>
+                        <li>Problem-solving</li>
+                        <li>Attention to detail</li>
+                        <li>Documentation &amp; reporting</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- ===== PORTFOLIO ===== -->
-        <section class="portfolio" id="portfolio">
-            <h2 class="section-title">Latest <span>Projects</span></h2>
+        <!-- ===== RESUME (experience & education) ===== -->
+        <section class="resume" id="resume">
+            <h2 class="section-title">My <span>Journey</span></h2>
 
+            <div class="resume-grid">
+                <div class="reveal">
+                    <h3 class="timeline-heading"><i class="bx bx-briefcase"></i> Experience</h3>
+                    <ol class="timeline">
+                        <li>
+                            <h4>IT Intern</h4>
+                            <p class="where">National Institute of Transport (NIT)</p>
+                            <ul>
+                                <li>Maintained and troubleshot computer hardware and peripherals, improving uptime by 20%.</li>
+                                <li>Installed, configured, optimized and repaired operating systems and essential software.</li>
+                                <li>Resolved 90% of staff hardware issues on first contact.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>ICT Field Training</h4>
+                            <p class="where">National Health Insurance Fund (NHIF), Kinondoni, Dar es Salaam</p>
+                            <ul>
+                                <li>Improved network stability and resolved connectivity issues across the office.</li>
+                                <li>Introduced preventive maintenance that cut downtime of critical systems by 20%.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>ICT Field Training (Industrial Practical Training)</h4>
+                            <p class="where">Mbeya University of Science and Technology (MUST)</p>
+                            <ul>
+                                <li>Developed and tested a web application in PHP and MySQL with full CRUD data management.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="reveal">
+                    <h3 class="timeline-heading"><i class="bx bxs-graduation"></i> Education</h3>
+                    <ol class="timeline">
+                        <li>
+                            <span class="date">2022 – 2025</span>
+                            <h4>BSc Computer Science</h4>
+                            <p class="where">Mbeya University of Science and Technology (MUST)</p>
+                            <p>GPA 3.6 / 5</p>
+                        </li>
+                        <li>
+                            <span class="date">2020 – 2022</span>
+                            <h4>Advanced Certificate of Secondary Education</h4>
+                            <p class="where">Tarime Secondary School</p>
+                            <p>Deputy Discipline Prefect (2021 – 2022)</p>
+                        </li>
+                        <li>
+                            <span class="date">2016 – 2019</span>
+                            <h4>Certificate of Secondary Education (O-Level)</h4>
+                            <p class="where">Ibinza Secondary School</p>
+                            <p>Head Prefect (2017 – 2018)</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROJECTS ===== -->
+        <section class="portfolio" id="portfolio">
+            <h2 class="section-title">My <span>Projects</span></h2>
+
+            <!--
+                To add a screenshot: replace the <div class="project-img project-icon">...</div>
+                with <div class="project-img"><img src="images/projects/name.jpg" alt="..." loading="lazy"></div>
+                To add links: put <a> buttons inside <div class="project-links"> (see the CSS .btn-sm class).
+            -->
             <div class="portfolio-content">
-                <!--
-                    TODO: one <article> per real project.
-                    - Screenshot: save as images/projects/<name>.jpg (about 1200x800)
-                    - Title, 1-2 sentence description (problem -> what you built -> result)
-                    - Tech tags, Live Demo URL and GitHub URL
-                -->
                 <article class="project reveal">
-                    <div class="project-img">
-                        <img src="images/mulokozi1-800.jpg" alt="Screenshot of Project One" loading="lazy" width="800" height="533">
-                    </div>
+                    <div class="project-img project-icon" aria-hidden="true"><i class="bx bxs-school"></i></div>
                     <div class="project-body">
-                        <h3>Project One</h3>
-                        <p>What problem it solved, what you built and the result (e.g. faster load time, more sign-ups).</p>
+                        <span class="project-type">Full-Stack Developer</span>
+                        <h3>School Administration Management System</h3>
+                        <p>A web system with dashboards, automated attendance, grade management and role-based access. I also managed the backend database to keep student records accurate, consistent and traceable.</p>
                         <ul class="tags">
-                            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+                            <li>PHP</li><li>MySQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
                         </ul>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-sm"><i class="bx bx-link-external"></i> Live Demo</a>
-                            <a href="#" class="btn btn-sm btn-outline"><i class="bx bxl-github"></i> Code</a>
-                        </div>
                     </div>
                 </article>
                 <article class="project reveal">
-                    <div class="project-img">
-                        <img src="images/mulokozi1-800.jpg" alt="Screenshot of Project Two" loading="lazy" width="800" height="533">
-                    </div>
+                    <div class="project-img project-icon" aria-hidden="true"><i class="bx bx-server"></i></div>
                     <div class="project-body">
-                        <h3>Project Two</h3>
-                        <p>What problem it solved, what you built and the result (e.g. faster load time, more sign-ups).</p>
+                        <span class="project-type">Institutional Project</span>
+                        <h3>System Maintenance &amp; Optimization</h3>
+                        <p>Supported system optimization and maintenance at NHIF and NIT to keep data-driven operations reliable, and troubleshot hardware and software issues affecting institutional workflows.</p>
                         <ul class="tags">
-                            <li>React</li><li>CSS</li><li>API</li>
+                            <li>System Administration</li><li>Networking</li><li>Troubleshooting</li>
                         </ul>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-sm"><i class="bx bx-link-external"></i> Live Demo</a>
-                            <a href="#" class="btn btn-sm btn-outline"><i class="bx bxl-github"></i> Code</a>
-                        </div>
                     </div>
                 </article>
                 <article class="project reveal">
-                    <div class="project-img">
-                        <img src="images/mulokozi1-800.jpg" alt="Screenshot of Project Three" loading="lazy" width="800" height="533">
-                    </div>
+                    <div class="project-img project-icon" aria-hidden="true"><i class="bx bx-leaf"></i></div>
                     <div class="project-body">
-                        <h3>Project Three</h3>
-                        <p>What problem it solved, what you built and the result (e.g. faster load time, more sign-ups).</p>
+                        <span class="project-type">Academic Project</span>
+                        <h3>Automated Farm Protection System</h3>
+                        <p>An Arduino-based PIR motion sensor with a buzzer, designed and simulated in Tinkercad, that scares birds away from crops to help farmers protect their harvest.</p>
                         <ul class="tags">
-                            <li>Python</li><li>JavaScript</li>
+                            <li>Arduino</li><li>PIR Sensor</li><li>Tinkercad</li>
                         </ul>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-sm"><i class="bx bx-link-external"></i> Live Demo</a>
-                            <a href="#" class="btn btn-sm btn-outline"><i class="bx bxl-github"></i> Code</a>
-                        </div>
                     </div>
                 </article>
             </div>
@@ -276,10 +359,17 @@
             <div class="contact-text reveal">
                 <h2 class="section-title">Contact <span>Me</span></h2>
                 <h4>Let's work together</h4>
-                <p>Have a project in mind or need help with your website? Send me a message and I'll get back to you as soon as possible.</p>
+                <p>Looking for a web developer or IT support for your team? Send me a message, or reach me directly on WhatsApp, and I'll get back to you as soon as possible.</p>
                 <ul class="contact-list">
-                    <li><i class="bx bxs-send"></i><a href="mailto:mulokoziwillium@gmail.com">mulokoziwillium@gmail.com</a></li>
+                    <li>
+                        <i class="bx bxs-send"></i><a href="mailto:mulokoziwillium@gmail.com">mulokoziwillium@gmail.com</a>
+                        <button class="copy-btn" data-copy="mulokoziwillium@gmail.com" aria-label="Copy email address">
+                            <i class="bx bx-copy"></i><span>Copy</span>
+                        </button>
+                    </li>
                     <li><i class="bx bxs-phone"></i><a href="tel:+255655478996">+255 655 478 996</a></li>
+                    <li><i class="bx bxl-whatsapp"></i><a href="https://wa.me/255655478996" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+                    <li><i class="bx bxs-map"></i><span>Dar es Salaam, Tanzania</span></li>
                 </ul>
                 <div class="social">
                     <a href="https://www.linkedin.com/in/mulokozi-geofrey-b0ab24266/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
@@ -315,7 +405,15 @@
 
     <footer class="footer">
         <p>Developed with passion by Mulokozi &copy; <span id="year">2026</span></p>
-        <a href="#home" class="top" aria-label="Back to top"><i class="bx bx-up-arrow-alt"></i></a>
     </footer>
+
+    <!-- Floating back-to-top button (appears after scrolling down) -->
+    <a href="#home" class="to-top" aria-label="Back to top"><i class="bx bx-up-arrow-alt"></i></a>
+
+    <!-- Floating WhatsApp button -->
+    <a href="https://wa.me/255655478996?text=Hello%20Mulokozi%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk."
+       class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with me on WhatsApp">
+        <i class="bx bxl-whatsapp"></i>
+    </a>
 </body>
 </html>

@@ -4,7 +4,7 @@ document.documentElement.classList.remove("no-js");
 // ----- Typing animation -----
 if (window.Typed) {
   new Typed(".typing-text", {
-    strings: ["Frontend Developer", "Web Designer", "UI/UX Designer"],
+    strings: ["Full-Stack Web Developer", "IT Support Specialist", "Computer Science Graduate"],
     typeSpeed: 80,
     backSpeed: 50,
     backDelay: 1500,
@@ -32,6 +32,28 @@ themeToggle.addEventListener("click", () => {
   applyTheme(next);
   try { localStorage.setItem("theme", next); } catch (e) { /* storage blocked: theme just won't be remembered */ }
 });
+
+// ----- Scroll progress bar -----
+const progressBar = document.querySelector(".scroll-progress");
+const toTop = document.querySelector(".to-top");
+let progressQueued = false;
+
+function updateProgress() {
+  const scrollable = document.documentElement.scrollHeight - innerHeight;
+  const progress = scrollable > 0 ? scrollY / scrollable : 0;
+  progressBar.style.transform = `scaleX(${Math.min(progress, 1)})`;
+  toTop.classList.toggle("show", scrollY > innerHeight * 0.6); // show back-to-top after scrolling a bit
+  progressQueued = false;
+}
+
+addEventListener("scroll", () => {
+  if (!progressQueued) {
+    progressQueued = true;
+    requestAnimationFrame(updateProgress); // at most one update per frame
+  }
+}, { passive: true });
+addEventListener("resize", updateProgress);
+updateProgress();
 
 // ----- Mobile menu -----
 const menuToggle = document.querySelector(".menu-toggle");
@@ -117,6 +139,41 @@ form.addEventListener("submit", async (e) => {
     button.disabled = false;
     button.textContent = "Send Message";
   }
+});
+
+// ----- Copy-to-clipboard buttons -----
+async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(text);   // modern browsers (https or localhost)
+  } catch {
+    const temp = document.createElement("textarea"); // fallback for older browsers
+    temp.value = text;
+    temp.style.position = "fixed";
+    temp.style.opacity = "0";
+    document.body.appendChild(temp);
+    temp.select();
+    document.execCommand("copy");
+    temp.remove();
+  }
+}
+
+document.querySelectorAll(".copy-btn").forEach((btn) => {
+  const icon = btn.querySelector("i");
+  const label = btn.querySelector("span");
+  let resetTimer;
+
+  btn.addEventListener("click", async () => {
+    await copyText(btn.dataset.copy);
+    btn.classList.add("copied");
+    icon.className = "bx bx-check";
+    label.textContent = "Copied!";
+    clearTimeout(resetTimer);
+    resetTimer = setTimeout(() => {
+      btn.classList.remove("copied");
+      icon.className = "bx bx-copy";
+      label.textContent = "Copy";
+    }, 2000);
+  });
 });
 
 // ----- Footer year -----
